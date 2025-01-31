@@ -1,0 +1,5 @@
+[
+    {"id": 1, "tipo": "beach-tenis", "capacidade": 4},
+    {"id": 2, "tipo": "volei", "capacidade": 6},
+    {"id": 3, "tipo": "futsal", "capacidade": 10}
+]

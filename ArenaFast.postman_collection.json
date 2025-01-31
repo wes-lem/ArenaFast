@@ -1,0 +1,182 @@
+{
+	"info": {
+		"_postman_id": "96b964c1-4987-468e-8af7-fbc9f4379460",
+		"name": "ArenaBeach",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40287945",
+		"_collection_link": "https://www.postman.com/wes-lem/workspace/publico/collection/40287945-96b964c1-4987-468e-8af7-fbc9f4379460?action=share&source=collection_link&creator=40287945"
+	},
+	"item": [
+		{
+			"name": "Listar Quadras",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/quadras",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"quadras"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Agendamentos",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/agendamentos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"agendamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar agendamento por Id",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/agendamentos/2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"agendamentos",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Criar agendamento",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"quadra_id\": 3,\r\n  \"data\": \"2025-01-23\",\r\n  \"hora\": \"14:00\",\r\n  \"nome_responsavel\": \"Jordana\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/agendamentos",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"agendamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar dados agendamento",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"quadra_id\": 3,\r\n  \"data\": \"2025-01-24\",\r\n  \"hora\": \"18:00\",\r\n  \"nome_responsavel\": \"Iasmin Azevedo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/agendamentos/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"agendamentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Agendamento",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/agendamentos/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"agendamentos",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
