@@ -189,6 +189,6 @@ DELETE /agendamentos/{id}
 
 ---
 
-## **Referência****ncia**
+## **Coleção Postman**
 
 Coleção completa no Postman: [ArenaBeach Postman Collection](https://www.postman.com/wes-lem/workspace/publico/collection/40287945-96b964c1-4987-468e-8af7-fbc9f4379460?action=share\&source=collection_link\&creator=40287945)
