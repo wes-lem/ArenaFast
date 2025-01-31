@@ -76,3 +76,125 @@ project_name/
 ├── requirements.txt             # Arquivo de requerimentos do sistema
 ├── README.md           # Documentação do projeto
 ```
+
+## Rotas
+
+# API - ArenaBeach
+
+Este documento descreve as rotas disponíveis na API do sistema ArenaBeach.
+
+## Base URL
+
+Todas as requisições devem ser feitas para o servidor local:
+
+```
+http://127.0.0.1:8000
+```
+
+---
+
+## **Quadras**
+
+### **Listar todas as quadras**
+
+**Endpoint:**
+
+```
+GET /quadras
+```
+
+**Descrição:** Retorna a lista de todas as quadras disponíveis.
+
+---
+
+## **Agendamentos**
+
+### **Listar todos os agendamentos**
+
+**Endpoint:**
+
+```
+GET /agendamentos
+```
+
+**Descrição:** Retorna todos os agendamentos cadastrados.
+
+### **Buscar agendamento por ID**
+
+**Endpoint:**
+
+```
+GET /agendamentos/{id}
+```
+
+**Parâmetros:**
+
+- `id` (int) - ID do agendamento desejado.
+
+**Descrição:** Retorna os detalhes do agendamento correspondente ao ID informado.
+
+### **Criar um novo agendamento**
+
+**Endpoint:**
+
+```
+POST /agendamentos
+```
+
+**Body (JSON):**
+
+```json
+{
+  "quadra_id": 3,
+  "data": "2025-01-23",
+  "hora": "14:00",
+  "nome_responsavel": "Jordana"
+}
+```
+
+**Descrição:** Cria um novo agendamento para uma quadra específica.
+
+### **Atualizar um agendamento existente**
+
+**Endpoint:**
+
+```
+PUT /agendamentos/{id}
+```
+
+**Parâmetros:**
+
+- `id` (int) - ID do agendamento a ser atualizado.
+
+**Body (JSON):**
+
+```json
+{
+  "quadra_id": 3,
+  "data": "2025-01-24",
+  "hora": "18:00",
+  "nome_responsavel": "Iasmin Azevedo"
+}
+```
+
+**Descrição:** Atualiza os detalhes de um agendamento existente.
+
+### **Deletar um agendamento**
+
+**Endpoint:**
+
+```
+DELETE /agendamentos/{id}
+```
+
+**Parâmetros:**
+
+- `id` (int) - ID do agendamento a ser deletado.
+
+**Descrição:** Remove um agendamento do sistema.
+
+---
+
+## **Referência****ncia**
+
+Coleção completa no Postman: [ArenaBeach Postman Collection](https://www.postman.com/wes-lem/workspace/publico/collection/40287945-96b964c1-4987-468e-8af7-fbc9f4379460?action=share\&source=collection_link\&creator=40287945)
