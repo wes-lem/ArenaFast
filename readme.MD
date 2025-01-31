@@ -23,6 +23,7 @@ Primeiro, clone o repositório para sua máquina local:
 ```bash
 git clone https://github.com/wes-lem/ArenaFast.git
 cd ArenaFast
+```
 
 ### 2. Crie e ative um ambiente virtual
 
@@ -75,5 +76,3 @@ project_name/
 ├── requirements.txt             # Arquivo de requerimentos do sistema
 ├── README.md           # Documentação do projeto
 ```
-
-Este `README.md` fornece as instruções básicas de instalação, configuração e execução do seu projeto com FastA
