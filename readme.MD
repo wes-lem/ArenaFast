@@ -2,6 +2,10 @@
 
 Este projeto é uma aplicação backend construída com **FastAPI** e **Uvicorn** para gerenciar um sistema de agendamento de quadras. O sistema permite você agende uma quadra no seu nome, atualize o agendamento, delete e liste os agendamentos.
 
+## Dupla:
+- Iasmin e Weslem
+
+
 ## Requisitos
 
 Antes de rodar o projeto, você precisa ter o seguinte instalado na sua máquina:
@@ -34,7 +38,7 @@ Instale as dependências necessárias listadas no requirements.txt:
 pip install -r requirements.txt
 ```
 
-### 6. Rode a aplicação
+### 4. Rode a aplicação
 Agora que o ambiente está configurado e o banco de dados está pronto, você pode rodar o servidor Uvicorn para iniciar a API FastAPI:
 
 ```bash
@@ -42,7 +46,7 @@ Agora que o ambiente está configurado e o banco de dados está pronto, você po
 ```
 O servidor estará rodando em http://127.0.0.1:8000.
 
-### 7. Teste a API
+### 5. Teste a API
 Abra o navegador e vá para http://127.0.0.1:8000/docs para acessar a documentação interativa da API gerada automaticamente pelo FastAPI. Lá você poderá testar as rotas da sua API, como cadastro de alunos, criação de provas, etc.
 
 Estrutura do Projeto
