@@ -79,12 +79,6 @@ project_name/
 
 ## Rotas
 
-# API - ArenaBeach
-
-Este documento descreve as rotas disponíveis na API do sistema ArenaBeach.
-
-## Base URL
-
 Todas as requisições devem ser feitas para o servidor local:
 
 ```
