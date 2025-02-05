@@ -1,7 +1,5 @@
-from datetime import datetime
-
 class Agendamento:
-    def __init__(self, id: int, quadra_id: int, data: datetime, hora: str, nome_responsavel: str):
+    def __init__(self, id: int, quadra_id: int, data: str, hora: str, nome_responsavel: str):
         self.id = id
         self.quadra_id = quadra_id
         self.data = data

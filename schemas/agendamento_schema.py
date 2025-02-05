@@ -1,9 +1,8 @@
 from pydantic import BaseModel
-from datetime import datetime
 
 class AgendamentoCreate(BaseModel):
     quadra_id: int
-    data: datetime
+    data: str
     hora: str
     nome_responsavel: str
 
